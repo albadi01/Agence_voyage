@@ -1,0 +1,45 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Accueil | ESCAPADE TOUR {% endblock %}
+
+{% block body %}
+<div class="laBoite">
+    <h1 class="text-center">Bienvenue dans votre Agence de voyage</h1>
+</div>
+
+<div class="col">
+    <div class="col">
+        <h2 class="text-center">Notre Concept</h2>
+    </div>
+    <div class="col">
+        <p class="mx-5">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Id provident alias, eveniet minima distinctio, nisi molestias dolorem repudiandae laboriosam nihil facere amet aut eius possimus! Beatae ea aperiam amet laudantium!
+            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eligendi ullam commodi fugiat dolores odio. Impedit inventore, nesciunt at illum nihil cupiditate optio culpa, voluptas tempora aliquam corporis ullam aliquid ducimus?
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ut aut repellat perspiciatis qui, ex hic adipisci facere? Tempore iusto, quisquam ut aliquid, pariatur velit laboriosam ab perspiciatis, architecto possimus blanditiis?Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quaerat eligendi, autem at voluptatem qui sapiente! Dolore voluptatibus incidunt quo tempore ratione, aut praesentium corporis cupiditate distinctio, eos sit officia odio.
+        </p>
+    </div>
+</div>
+<div class="col">
+    <div class="col text-center">
+        <h2>Nos Experts à votre service</h2>
+    </div>
+    <div class="row justify-content-around">
+        <div class="col-3">
+            <img src="{{ asset('images/portrait2.jpg')}}" class="rounded-circle ms-5" width="340" height="350">
+            <h3 class="text-center">vileu Quentin<br><a href=" {{ path('destination/usa.html.twig')}}" class="text-center">USA</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eos eum eaque quisquam atque deserunt veniam ea incidunt enim accusantium quaerat dolores asperiores similique officia, debitis rerum voluptatem. Optio, fugiat perferendis?</p>
+        </div>
+        <div class="col-3">
+            <img src="{{ asset('images/portrait3.jpg')}}" class="rounded-circle ms-5" width="340" height="350">
+            <h3 class="text-center">Peron Sophie <br><a href="{{ path('destination/canada.html.twig')}}">Canada</a></h3>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Molestiae asperiores sapiente perspiciatis ratione earum esse repudiandae quod. In provident tenetur, minus debitis consectetur atque tempora molestiae incidunt ad ratione! Aut!</p>
+        </div>
+        <div class="col-3">
+            <img src="{{ asset('images/portrait1.jpg')}}" class="rounded-circle ms-5" width="340" height="350">
+            <h3 class="text-center">Pignon claire<br><a href="{{ path('destination/mexique.html.twig')}}" class="text-center">Mexique</a></h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Adipisci eaque nemo architecto enim vitae temporibus officiis? Maxime praesentium tempora quo eaque dignissimos cupiditate eligendi, odit dicta nam neque fugit! Nobis.</p>
+        </div>
+    </div>
+
+</div>
+{% endblock %}

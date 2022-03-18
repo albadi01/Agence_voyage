@@ -1,0 +1,13 @@
+
+.laBoite{
+
+    width: 100% ;
+    height: 700px;
+   
+    background-image: url('https://cis.fti-group.com/images/647595.jpg'); /*pineda del mar*/
+   
+    background-position: 50%;
+    /* width: 100%; */
+    background-repeat: no-repeat;
+    background-size: cover;
+}

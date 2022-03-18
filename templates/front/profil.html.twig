@@ -1,0 +1,18 @@
+{% extends "base.html.twig" %}
+
+{% block title %} {{ parent() }} | Profil {% endblock %}
+
+{% block body %}
+
+    <h1 class="text-center">Bienvenue sur votre Profil</h1>
+    {# <h1 class="text-center text-primary">Espace Personnel</h1> #}
+    {# <h2 class="text-center">Bienvenue, {{ app.user.prenom ~ " " ~ app.user.nom}}</h2> #}
+
+    {# Affichage des messages flashs #}
+    {% for type, message in app.flashes %}
+        <div class="alert alert-{{type}} col-5 mx-auto text-center">
+            {{ message.0 }}
+        </div>
+    {% endfor %}
+
+{% endblock %}
